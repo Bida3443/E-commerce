@@ -6,6 +6,11 @@ export default function Navbar () {
             <div>
                 <Link href="/">E-COMMERCE</Link>
             </div>
+            <div>
+                <Link href="/">Home</Link>
+                <Link href="/Product">Product</Link>
+                <Link href="/Checkout">Checkout</Link>
+            </div>
         </nav>
     )
 }

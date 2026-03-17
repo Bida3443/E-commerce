@@ -4,7 +4,7 @@ import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
+  subsets: ["latin"],     
 });
 
 const geistMono = Geist_Mono({
@@ -27,8 +27,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+ 
+        <nav>
+          <main>{children}</main>
+        </nav>
       </body>
     </html>
   );
 }
+
+
+
+

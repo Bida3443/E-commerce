@@ -42,7 +42,7 @@ export default function Home() {
             
             <div key={index}>
               
-              <a href="/" className="">{Nav.text}</a>
+              <a href="/https://k-dental-six.vercel.app/" className="hover:text-blue-700 transition-all duration-300">{Nav.text}</a>
               
             </div>
             

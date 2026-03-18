@@ -2,15 +2,19 @@ import Link from "next/link"
 
 export default function Navbar () {
     return(
-        <nav>
-            <div>
-                <Link href="/">E-COMMERCE</Link>
-            </div>
-            <div>
+        <nav className="sticky top-0 z-50 bg-white shadow">
+            <div className="container mx-auto flex items-center justify-between px-4 py-4">
+                  
+                <Link href="/" className="hover:text-blue-600">E-COMMERCE</Link>
+            
+            <div className="hidden md:flex space-x-6">
                 <Link href="/">Home</Link>
-                <Link href="/Product">Product</Link>
-                <Link href="/Checkout">Checkout</Link>
+                <Link href="/Product" className="hover:text-blue-600">Product</Link>
+                <Link href="/Checkout" className="hover:text-blue-600">Checkout</Link>
+            </div>
+            <div className="flex items-center">vvv</div>
             </div>
         </nav>
     )
 }
+

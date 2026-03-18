@@ -25,8 +25,8 @@ export default async function Home() {
             </Button>
           </div>
           <Image alt="Banner Image" 
-            width={450} 
-            height={450} 
+            width={200} 
+            height={250} 
             src={products.data[0].images[0]}
             />
         </div>

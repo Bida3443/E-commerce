@@ -1,9 +1,7 @@
-import stripe from "stripe";
+import Stripe from "stripe";
 
-export default function Stripe (){
-    return(
-        <div></div>
-    )
-}
+export const stripe = new Stripe (process.env.STRIPE_SECRET_KEY!);
+   
+
 
 

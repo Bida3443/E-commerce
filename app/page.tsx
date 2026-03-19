@@ -5,28 +5,33 @@ import Image from "next/image";
 
 
 
-
 export default async function Home() {
         const products = await stripe.products.list({
           expand: ["data.default_price"],
           limit: 5,
         });
 
+                               
 
   return (
     <div>
-      <section>
-        <div>
-          <div>
-            <h2>Welcome To My Ecommerce</h2>
-            <p>Discover the latest products at the best prices.</p>
-            <Button asChild variant="default">
-              <Link href="/product">Browse All Products</Link>
+      <section className="rounded bg-neutral-200 py-8 sm:py-12 "> 
+        <div className="mx-auto flex lg:flex-row flex-col items-center justify-center lg:gap-58 gap-4 px-8 sm:px-16">
+          <div className="max-w-md lg:justify-start justify-center  space-y-4">
+            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Welcome To My Ecommerce</h2>
+            <p className="text-neutral-600">Discover the latest products at the best prices.</p>
+            <Button 
+              asChild 
+              variant="default"
+              className="inline-flex items-center justify-center rounded-full px-6 py-3 bg-black text-white">
+              <Link 
+              href="/product"
+              className="inline-flex items-center justify-center rounded-full px-6 py-3">Browse All Products</Link>
             </Button>
-          </div>
+          </div>            
           <Image alt="Banner Image" 
-            width={200} 
-            height={250} 
+            width={250} 
+            height={20} 
             src={products.data[0].images[0]}
             />
         </div>
@@ -35,4 +40,4 @@ export default async function Home() {
   );
 }
 
-
+ 

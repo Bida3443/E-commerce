@@ -16,8 +16,8 @@ export default async function Home() {
   return (
     <div>
       <section className="rounded-xl bg-neutral-200 py-8 sm:py-12 "> 
-        <div className="mx-auto flex lg:flex-row flex-col items-center justify-center lg:gap-58 gap-1 px-8 sm:px-16">
-          <div className="max-w-md lg:justify-start justify-center  space-y-4">
+        <div className="mx-auto flex lg:flex-row flex-col items-center justify-center lg:gap-58 gap-4 px-8 sm:px-16">
+          <div className="max-w-md  lg:justify-start justify-center  space-y-4">
             <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Welcome To My Ecommerce</h2>
             <p className="text-neutral-600">Discover the latest products at the best prices.</p>
             <Button 
@@ -27,7 +27,7 @@ export default async function Home() {
               <Link 
               href="/Product"
               className="inline-flex items-center justify-center rounded-full px-6 py-3">Browse All Products</Link>
-            </Button>
+            </Button>  
           </div>            
           <Image alt="Banner Image" 
             width={250}  

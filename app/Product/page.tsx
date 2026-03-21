@@ -1,6 +1,18 @@
-export default function ProductPage () {
+import {stripe} from "@/lib/stripe"
+
+
+export default async function ProductPage () {
+
+    const products = await stripe.products.list({
+          expand: ["data.default_price"],
+          limit: 5,
+        });
     return(
-        <div>ProductPage</div>
+        <div>
+            <h1>All Products</h1>
+            <h1>All Products</h1>
+            <ProductList products={products.data}/>
+        </div>
     )
 }
 

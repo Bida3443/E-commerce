@@ -7,12 +7,12 @@ export default async function ProductPage () {
           expand: ["data.default_price"],
           limit: 5,
         });
-    return(
+    return( 
         <div>
             <h1>All Products</h1>
-            <h1>All Products</h1>
+            
             <ProductList products={products.data}/>
-        </div>
+        </div> 
     )
-}
+} 
 

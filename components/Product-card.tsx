@@ -5,6 +5,7 @@ import { Card } from "./ui/card";
 import Image from "next/image";
 
 
+
 interface props {
     products: Stripe.Product[];
 }
@@ -15,7 +16,7 @@ export const ProductCard = ({ products }: props) => {
         <div> 
             <div>
                 <input type="text" placeholder="Search products...." />
-            </div>
+            </div>  
             <ul>
                 {products.map((product)=>{
                     return (

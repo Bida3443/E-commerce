@@ -10,9 +10,6 @@ export default async function ProductPage () {
     return( 
         <div>
             <h1>All Products</h1>
-            <h1>All Products</h1>
-            <h1>All Products</h1>
-            <h1>All Products</h1>
             
             <ProductList products={products.data}/>
         </div> 
